@@ -1,0 +1,27 @@
+font_family              {{ .font}}
+
+# Selection Colors
+{{ $colors := include "colors.json" | fromJson -}}
+selection_foreground     #{{ $colors.special.foreground }}
+selection_background     #{{ $colors.special.background }}
+
+# Window border Colors
+#active_border_color      #8ec07c
+#inactive_border_color    #665c54
+
+# Kitty tabs colors 
+#active_tab_foreground    #ebdbb2
+#active_tab_background    #030303
+#inactive_tab_foreground  #ebdbb2
+#inactive_tab_background  #8ec07c
+
+# Basic color
+background               #{{ $colors.special.background }}
+foreground               #{{ $colors.special.foreground }}
+
+# Cursor colors
+cursor                   #{{ $colors.special.cursor }}
+cursor_text_color        #{{ $colors.special.cursor }}
+
+# Url color
+url_color                #{{ $colors.special.cursor }}
