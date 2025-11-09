@@ -1,0 +1,67 @@
+{
+  "layer": "top",
+  "position": "top",
+
+  "modules-left": [
+    "cpu",
+    "memory",
+    "disk",
+    "hyprland/window"
+  ],
+
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+
+  "modules-right": [
+    "clock",
+    "tray"
+  ],
+
+  "tray": {
+    "icon-size": 18,
+    "spacing": 6
+  },
+
+  "hyprland/workspaces": {
+    "on-click": "activate",
+    "format": "{}",
+    "window-rewrite": {
+      "foot": "",
+      "kitty": "",
+      "alacritty": "",
+      "code": "",
+      "codium": "",
+      "firefox": "",
+      "chromium": "",
+      "thunar": "",
+      "spotify": ""
+    },
+    "sort-by-number": true,
+    "persistent-workspaces": {
+      "*": [1, 2, 3, 4, 5]
+    }
+  },
+
+  "hyprland/window": {
+    "format": "{}"
+  },
+
+  "cpu": {
+    "format": "CPU {usage}%  |"
+  },
+
+  "memory": {
+    "format": "RAM {percentage}%  |"
+  },
+
+  "disk": {
+    "path": "/",
+    "format": "Disk {percentage_used}%"
+  },
+  "clock": {
+    "format": "{:%I:%M %p}",
+    "tooltip-format": "{:%A, %B %d %Y}",
+    "on-click": "gsimplecal"
+  }
+}

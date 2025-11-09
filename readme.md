@@ -7,3 +7,14 @@
 
 # How to use `setwall.sh`
 `sh setwall.sh path/to/wallpaper.jpg`
+
+# Colors
+Pywal organizes colors in two groups, dark and light.
+```
+- color0 - darkest
+- color1 - red
+- color2 - green
+- color3 - yellow
+- color4 - magenta
+- color5 - 
+```

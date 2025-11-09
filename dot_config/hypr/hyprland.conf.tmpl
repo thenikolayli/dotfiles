@@ -213,9 +213,9 @@ input {
 
     touchpad {
         natural_scroll = true
-	disable_while_typing = true
-	scroll_factor = .4
-	tap-and-drag = false
+        disable_while_typing = true
+        scroll_factor = .27
+        tap-and-drag = false
     }
 }
 
@@ -244,7 +244,7 @@ bind = $mainMod, return, exec, $terminal
 bind = $mainMod, Q, killactive
 bind = $mainMod SHIFT, c, exec, hyprpicker -a -f hsl
 bind = , PRINT, exec, hyprshot -m output -o /home/nikolay/Pictures/screenshots
-bind = $mainMod, PRINT, exec, hyprshot -m region -f --clipboard-only
+bind = $mainMod SHIFT, s, exec, hyprshot -m region -f --clipboard-only
 bind = $mainMod, l, exec, hyprlock
 
 bind = $mainMod, M, exit,
@@ -324,3 +324,6 @@ windowrule = suppressevent maximize, class:.*
 
 # Fix some dragging issues with XWayland
 windowrule = nofocus,class:^$,title:^$,xwayland:1,floating:1,fullscreen:0,pinned:0
+
+layerrule = blur, waybar
+layerrule = ignorealpha, waybar
