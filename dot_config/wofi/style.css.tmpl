@@ -1,0 +1,31 @@
+{{ $colors := include "colors.json" | fromJson -}}
+
+#input {
+    background-color: #{{$colors.special.background}};
+    color: #{{$colors.colors.color6}};
+    outline: none;
+    border: none;
+    border-radius: 0;
+    padding: 8px;
+}
+
+#scroll {
+    background-color: #{{$colors.special.background}};
+    color: #{{$colors.colors.color6}};
+}
+
+#entry:selected {
+    background-color: #{{$colors.colors.color6}};
+}
+
+#text:selected {
+    color: #{{$colors.colors.color0}};
+}
+
+#entry > box > image:last-child {
+    display: none;
+}
+
+#img {
+    margin-right: 8px;
+}

@@ -4,6 +4,6 @@ jq 'walk(if type == "string" then sub("#"; "") end)' \
 cp ~/.cache/wal/colors.css ~/.local/share/chezmoi/colors.css
 echo "$1" > ~/.local/share/chezmoi/wallpath.txt
 
-chezmoi apply
+chezmoi apply --force
 killall hyprpaper waybar
 hyprctl dispatch exec "hyprpaper & waybar"
