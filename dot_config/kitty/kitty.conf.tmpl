@@ -2,8 +2,8 @@ font_family              {{ .font}}
 
 # Selection Colors
 {{ $colors := include "colors.json" | fromJson -}}
-selection_foreground     #{{ $colors.special.foreground }}
-selection_background     #{{ $colors.special.background }}
+selection_foreground     #{{ $colors.special.background }}
+selection_background     #{{ $colors.special.foreground }}
 
 # Window border Colors
 #active_border_color      #8ec07c
