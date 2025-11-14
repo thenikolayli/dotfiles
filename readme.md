@@ -7,6 +7,7 @@
 
 # How to use `setwall.sh`
 `sh setwall.sh path/to/wallpaper.jpg`
+-s -t -e means skip updating colors in the terminal, tty, and gtk/xrdb/i3/sway/polybar
 
 # Colors
 Pywal organizes colors in two groups, dark and light.
