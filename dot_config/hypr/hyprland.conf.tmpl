@@ -48,7 +48,7 @@ $menu = wofi --show drun
 # exec-once = $terminal
 # exec-once = nm-applet &
 # exec-once = waybar & hyprpaper & firefox
-exec-once = hypridle & swaync --gapplication-service & systemctl --user start hyprpolkitagent
+exec-once = hypridle & swaync --gapplication-service & systemctl --user start hyprpolkitagent & copyq
 exec-once = hyprpaper & waybar & blueman-applet & nm-applet
 
 
@@ -247,6 +247,7 @@ bind = , PRINT, exec, hyprshot -m output -o /home/nikolay/Pictures/screenshots
 bind = $mainMod SHIFT, s, exec, hyprshot -m region -f --clipboard-only
 bind = $mainMod, L, exec, hyprlock
 bind = $mainMod, PERIOD, exec, rofimoji
+bind = $mainMod, V, exec, copyq toggle
 
 bind = $mainMod, ESCAPE, exit,
 bind = $mainMod, E, exec, $fileManager
