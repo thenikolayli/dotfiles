@@ -17,31 +17,33 @@ general {
 }
 
 # uncomment to enable fingerprint authentication
-auth {
-    fingerprint {
-        enabled = true
-        ready_message = Scan fingerprint to unlock
-        present_message = Scanning...
-        retry_delay = 250 # in milliseconds
-    }
-}
+#auth {
+#    fingerprint {
+#        enabled = true
+#        ready_message = Scan fingerprint to unlock
+#        present_message = Scanning...
+#        retry_delay = 250 # in milliseconds
+#    }
+#}
 
 animations {
-    enabled = true
-    bezier = linear, 1, 1, 0, 0
-    animation = fadeIn, 1, 5, linear
-    animation = fadeOut, 1, 5, linear
-    animation = inputFieldDots, 1, 2, linear
+    enabled = false
+    bezier = linear, .5, 1, .89, 1
+    animation = fadeIn, 1, 3, linear
+    animation = fadeOut, 1, 3, linear
+    animation = inputFieldDots, 1, 1, linear
 }
 
+{{- $wallpath := include "wallpath.txt" | trim -}}
+
 background {
-    monitor =
-    path = screenshot
-    blur_passes = 3
+    monitor = eDP-1
+    path = {{ $wallpath }}
+    blur_passes = 0
 }
 
 input-field {
-    monitor =
+    monitor = eDP-1
     size = 20%, 5%
     outline_thickness = 3
     inner_color = rgba(00000000) # no fill
