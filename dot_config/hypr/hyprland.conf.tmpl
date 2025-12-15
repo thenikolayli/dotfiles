@@ -137,7 +137,7 @@ decoration {
 
 # https://wiki.hypr.land/Configuring/Variables/#animations
 animations {
-    enabled = no
+    enabled = yes
 
     bezier = easeOutQuint,   0.23, 1,    0.32, 1
     bezier = easeInOutCubic, 0.65, 0.05, 0.36, 1
@@ -155,16 +155,16 @@ animations {
     animation = windowsOut,    0, 1, easeOutQuint
 
     # Pure fade animations
-    animation = fadeIn,        1, 1, almostLinear
-    animation = fadeOut,       1, 1, almostLinear
-    animation = fade,          1, 1, almostLinear
+    animation = fadeIn,        1, 1.2, almostLinear
+    animation = fadeOut,       1, 1.2, almostLinear
+    animation = fade,          1, 1.2, almostLinear
 
     animation = border,        1, 5.39, easeOutQuint
     animation = layers,        0, 3.81, easeOutQuint
     animation = layersIn,      0, 4,    easeOutQuint, fade
     animation = layersOut,     0, 1.5,  linear, fade
-    animation = fadeLayersIn,  0, 0.4, almostLinear
-    animation = fadeLayersOut, 0, 0.4, almostLinear
+    animation = fadeLayersIn,  1, 1, almostLinear
+    animation = fadeLayersOut, 1, 1, almostLinear
 
     animation = workspaces,    1, 1, almostLinear, fade
     animation = workspacesIn,  1, 1, almostLinear, fade

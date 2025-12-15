@@ -7,6 +7,7 @@
     "memory",
     "disk",
     "battery",
+    "wireplumber",
     "hyprland/window"
   ],
 
@@ -64,6 +65,11 @@
   "battery": {
     "bat": "BAT0",
     "interval": 60,
-    "format": "Battery {capacity}%"
+    "format": "Battery {capacity}% |"
+  },
+  "wireplumber": {
+      "format": "Volume {volume}%",
+      "on-click": "pwvucontrol",
+      "on-click-right": "playerctl --all-players pause"
   }
 }
