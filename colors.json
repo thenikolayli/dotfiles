@@ -1,27 +1,28 @@
 {
-  "wallpaper": "/home/nikolay/Downloads/angel_devil.jpg",
+  "checksum": "0efbdfa2815643930b1f6bd48402c5be",
+  "wallpaper": "/home/nikolay/Pictures/cyansea.jpg",
   "alpha": "100",
   "special": {
-    "background": "163640",
-    "foreground": "e9e9e1",
-    "cursor": "e9e9e1"
+    "background": "111f27",
+    "foreground": "c3c7c9",
+    "cursor": "c3c7c9"
   },
   "colors": {
-    "color0": "163640",
-    "color1": "689697",
-    "color2": "A3A69C",
-    "color3": "CDB8A1",
-    "color4": "AACABE",
-    "color5": "D3C7B0",
-    "color6": "E2D1A8",
-    "color7": "e9e9e1",
-    "color8": "a3a39d",
-    "color9": "689697",
-    "color10": "A3A69C",
-    "color11": "CDB8A1",
-    "color12": "AACABE",
-    "color13": "D3C7B0",
-    "color14": "E2D1A8",
-    "color15": "e9e9e1"
+    "color0": "111f27",
+    "color1": "2D7091",
+    "color2": "4678A4",
+    "color3": "338BA4",
+    "color4": "5699AE",
+    "color5": "5FA8CB",
+    "color6": "4AB6CE",
+    "color7": "c3c7c9",
+    "color8": "606e75",
+    "color9": "2D7091",
+    "color10": "4678A4",
+    "color11": "338BA4",
+    "color12": "5699AE",
+    "color13": "5FA8CB",
+    "color14": "4AB6CE",
+    "color15": "c3c7c9"
   }
 }

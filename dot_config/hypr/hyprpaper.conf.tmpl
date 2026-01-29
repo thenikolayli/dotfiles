@@ -1,4 +1,13 @@
 {{- $wallpath := include "wallpath.txt" | trim -}}
 
-preload = {{ $wallpath }}
-wallpaper = , {{ $wallpath }}
+wallpaper {
+    monitor = eDP-1
+    path = {{ $wallpath }}
+    fit_mode = cover
+}
+
+wallpaper {
+    monitor = HDMI-A-1
+    path = {{ $wallpath }}
+    fit_mode = cover
+}
